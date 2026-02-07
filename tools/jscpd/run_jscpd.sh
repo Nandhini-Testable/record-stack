@@ -4,6 +4,7 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 mkdir -p reports
+# standardised runner preamble
 
 echo "[jscpd] version:"; node_modules/.bin/jscpd --version
 # Gate G8: the planted duplicate pair must be found with the COMMITTED config,

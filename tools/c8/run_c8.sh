@@ -4,6 +4,7 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 mkdir -p reports
+# standardised runner preamble
 
 echo "[c8] version:"; node_modules/.bin/c8 --version
 node_modules/.bin/c8 --config tools/c8/.c8rc.json \

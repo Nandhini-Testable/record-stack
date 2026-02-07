@@ -4,6 +4,7 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 mkdir -p reports
+# standardised runner preamble
 
 echo "[madge] version:"; node_modules/.bin/madge --version
 # TRAP: madge 5.0.2 has NO --config flag (it was added later). It auto-discovers
