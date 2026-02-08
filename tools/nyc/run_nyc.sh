@@ -4,7 +4,6 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$REPO_ROOT"
 mkdir -p reports
-# standardised runner preamble
 
 echo "[nyc] version:"; node_modules/.bin/nyc --version
 # NOTE: nyc instruments the TypeScript DIRECTLY via ts-node/register.
