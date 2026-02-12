@@ -1,0 +1,49 @@
+{
+  "branchId": "TS-001",
+  "repository": "typescript-n12-001-005",
+  "language": "TypeScript",
+  "typescriptVersion": "5.0.4",
+  "nodeVersion": "12",
+  "nodeVersionVerified": "12.22.12",
+  "bundler": "esbuild",
+  "bundlerVersion": "0.21.5",
+  "packageManager": "npm",
+  "packageManagerVersion": "8.19.4",
+  "architecture": "Monolith",
+  "scenario": "1 - Monolithic",
+  "module": "flat",
+  "sourceRoot": "src",
+  "deployableUnits": [
+    "typescript-n12-ts-001"
+  ],
+  "workspaces": [],
+  "toolsWired": 26,
+  "coveragePrimary": "c8",
+  "coverageCrossCheck": "nyc + ts-node",
+  "plantedFixtures": {
+    "duplication": [
+      "src/services/retail-order-processor.ts",
+      "src/services/wholesale-order-processor.ts"
+    ],
+    "complexity": "src/analysis/complexity-sample.ts",
+    "sast": "src/analysis/sast-fixture.ts",
+    "taint": "src/analysis/taint-fixture.ts",
+    "deadCode": "src/analysis/dead-code.ts",
+    "callGraph": "src/analysis/call-graph-sample.ts",
+    "vulnerablePins": [
+      "lodash@4.17.15",
+      "minimist@1.2.5",
+      "axios@0.21.0",
+      "node-fetch@2.6.0",
+      "tar@6.1.0"
+    ]
+  },
+  "toolsSkipped": {
+    "knip": "no published version supports Node 12",
+    "vitest": "no published version supports Node 12",
+    "@biomejs/biome": "oldest published version requires Node >=14.21.3",
+    "OSV-Scanner": "api.osv.dev unreachable -- 403 at the egress proxy",
+    "npm downloads API": "api.npmjs.org unreachable -- 403 at the egress proxy",
+    "npm-check-updates@19.6.6": "requires Node >=18; pinned to 12.5.12 instead"
+  }
+}
