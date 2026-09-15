@@ -1,11 +1,9 @@
-# TypeScript Order Platform -- Monolith (TS-001)
+# TypeScript Order Platform -- Monolith (TS_V12_ESBUILD_NPM_MONO)
 
 Tool-evaluation repository for **Node 12**, bundled with **esbuild**,
 managed with **npm**, in a **Monolith** layout.
 
-This is branch **TS-001** of `typescript-n12-001-005`. Node is held constant
-across all five branches; the package manager and the architecture are the
-variables.
+This is branch **TS_V12_ESBUILD_NPM_MONO** of the consolidated `typescript-corpus` repository, which holds all 216 TypeScript branches across every Node version, bundler, package manager and architecture combination in this corpus.
 
 ## Project type
 
@@ -17,21 +15,6 @@ variables.
 - **Bundler:** esbuild 0.21.5
 - **Package manager:** npm 8.19.4
 - **Source root:** `src`
-
-## Branches
-
-`main` carries only the repository title. Every branch below holds the full
-project, and differs only in package manager and architecture:
-
-| Branch | Package manager | Architecture |
-|---|---|---|
-| `TS-001` | npm 8.19.4 | Monolith |
-| `TS-002` | npm 8.19.4 | Microservices |
-| `TS-003` | yarn (Berry) 3.8.7 | Monolith |
-| `TS-004` | yarn (Berry) 3.8.7 | Microservices |
-| `TS-005` | pnpm 6.35.1 | Monolith |
-
-You are on **TS-001**.
 
 Node 12 is end-of-life, and that is deliberate: it pins the entire toolchain to
 the last release of each tool that still supports it. Every version in this
@@ -166,7 +149,7 @@ A CI file that only installs and tests would leave the declared tools unproven.
 ## Layout
 
 ```
-typescript-n12-001-005/  (TS-001)
+typescript-corpus/  (TS_V12_ESBUILD_NPM_MONO)
 |-- .github/  (1 files)
 |-- src/  (15 files)
 |-- tests/  (5 files)
