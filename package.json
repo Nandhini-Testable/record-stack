@@ -1,0 +1,14 @@
+{
+  "name": "inventory-service",
+  "version": "1.0.0",
+  "description": "Synthetic test project for TP-5989: JavaScript with no declared Node version plus one shell script",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
