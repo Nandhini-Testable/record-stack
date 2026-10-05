@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net45</TargetFramework>
     <AssemblyName>OrderKit</AssemblyName>
     <RootNamespace>OrderKit</RootNamespace>
     <!-- LangVersion is deliberately NOT set. It defaults from the TargetFramework,
