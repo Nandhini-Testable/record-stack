@@ -4,9 +4,6 @@
   "description": "GraniteMill -- Community garden plots (JS_V12_VITE_NPM_MONO)",
   "private": true,
   "main": "src/index.js",
-  "engines": {
-    "node": ">=12.22.12"
-  },
   "scripts": {
     "build": "vite build",
     "test": "mocha tests/**/*.test.js",
